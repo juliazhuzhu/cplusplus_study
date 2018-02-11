@@ -27,6 +27,8 @@
 #include <map>
 #include <algorithm>
 #include <string>
+#include <stdio.h>
+#include <string.h>
 
 using namespace std;
 
@@ -73,42 +75,26 @@ int *foo()
   return i;
 }
 
-template <typename T>
-struct scope_exit
-{
-  scope_exit(T &&t) : t_{std::move(t)} {}
-  ~scope_exit() { t_(); }
-  T t_;
-};
-
-template <typename T>
-scope_exit<T> make_scope_exit(T &&t) { return scope_exit<T>{
-  std::move(t)}; }
-
-/*
-  C++11 lambda functions
-*/
-int *foo_2()
-{
-  int *i = new int{10};
-  auto cleanup = make_scope_exit([&i]() mutable { delete i; i = 0; });
-  std::cout << *i << '\n';
-  return i;
-}
 
 class xiaoyeTest{
 public:
 
   void init() {
     curent_val = 1;
-    std::map<std::string, std::string> value_map;
+    map<string, string> value_map;
 
     printf("xiaoye TEst \n");
-    value_map.insert(std::make_pair("1","mac"));
-    value_map.insert(std::make_pair("2","thinkpad"));
+    value_map.insert(make_pair("1","mac"));
+    value_map.insert(make_pair("2","thinkpad"));
 
-    std::for_each(begin(value_map), end(value_map),
-           [this](std::pair<std::string, std::string> pair){ std::cout << pair.first << " has value " << pair.second << std::endl;std::cout << "val:" <<get_value()<<std::endl;});
+    
+    std::for_each(value_map.begin(),value_map.end(),[this](const std::pair<string, string>& pair)
+												{ 
+													cout<<pair.first<<":"<<pair.second<<endl;
+                          cout<<get_value()<<std::endl;
+													
+												}
+				);
   }
 
   int get_value() { return curent_val;};
