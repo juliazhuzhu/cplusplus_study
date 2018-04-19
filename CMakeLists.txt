@@ -19,13 +19,14 @@ target_link_libraries(boost_pointer ${Boost_LIBRARIES})
 target_link_libraries(asio_test ${Boost_LIBRARIES})
 target_link_libraries(boost_uuid ${Boost_LIBRARIES})
 
-add_executable(test_bind test_bind.cpp)
-SET_PROPERTY(TARGET test_bind PROPERTY CXX_STANDARD 11)
-target_link_libraries(test_bind dl pthread)
+#add_executable(test_bind test_bind.cpp)
+#SET_PROPERTY(TARGET test_bind PROPERTY CXX_STANDARD 11)
+#target_link_libraries(test_bind dl pthread)
 
-add_executable(test_iterator test_iterator.cpp)
-SET_PROPERTY(TARGET test_iterator PROPERTY CXX_STANDARD 11)
+#add_executable(test_iterator test_iterator.cpp)
+#SET_PROPERTY(TARGET test_iterator PROPERTY CXX_STANDARD 11)
 
 add_executable(test_map test_map.cpp)
 SET_PROPERTY(TARGET test_map PROPERTY CXX_STANDARD 11)
 
+add_subdirectory(Decorator)
