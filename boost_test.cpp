@@ -278,5 +278,10 @@ int main()
 */
   xiaoyeTest test;
   test.init();
+
+  string tester;
+  char buf[256]={0};
+  strcpy(buf,"fuck");
+  //tester.assign(buf,-1);
 	return 0;
 }

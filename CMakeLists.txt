@@ -30,3 +30,4 @@ add_executable(test_map test_map.cpp)
 SET_PROPERTY(TARGET test_map PROPERTY CXX_STANDARD 11)
 
 add_subdirectory(Decorator)
+add_subdirectory(Bridge)
