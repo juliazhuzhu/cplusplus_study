@@ -29,5 +29,51 @@ target_link_libraries(boost_uuid ${Boost_LIBRARIES})
 add_executable(test_map test_map.cpp)
 SET_PROPERTY(TARGET test_map PROPERTY CXX_STANDARD 11)
 
+add_executable(test_clock test_clock.cpp)
+SET_PROPERTY(TARGET test_clock PROPERTY CXX_STANDARD 11)
+
+add_executable(test_time test_time.cpp)
+SET_PROPERTY(TARGET test_clock PROPERTY CXX_STANDARD 11)
+
+add_executable(test_replace test_replace.cpp)
+SET_PROPERTY(TARGET test_clock PROPERTY CXX_STANDARD 11)
+
 add_subdirectory(Decorator)
 add_subdirectory(Bridge)
+#add_subdirectory(Transaction)
+
+add_executable(remove_duplicate leecode26.cpp)
+SET_PROPERTY(TARGET remove_duplicate PROPERTY CXX_STANDARD 11)
+
+add_executable(remove_duplicate2 leecode80.cpp)
+SET_PROPERTY(TARGET remove_duplicate2 PROPERTY CXX_STANDARD 11)
+
+add_executable(minSubArrayLen leetcode209.cpp)
+SET_PROPERTY(TARGET minSubArrayLen PROPERTY CXX_STANDARD 11)
+
+add_executable(lengthOfLongestSubstring leetcode3.cpp)
+SET_PROPERTY(TARGET lengthOfLongestSubstring PROPERTY CXX_STANDARD 11)
+
+add_executable(ValidAnagram leetcode242.cpp)
+SET_PROPERTY(TARGET ValidAnagram PROPERTY CXX_STANDARD 11)
+
+add_executable(HappyNumber leetcode202.cpp)
+SET_PROPERTY(TARGET HappyNumber PROPERTY CXX_STANDARD 11)
+
+add_executable(WordPattern leetcode290.cpp)
+SET_PROPERTY(TARGET WordPattern PROPERTY CXX_STANDARD 11)
+
+add_executable(IsomorphicStrings leetcode205.cpp)
+SET_PROPERTY(TARGET IsomorphicStrings PROPERTY CXX_STANDARD 11)
+
+add_executable(TwoSums leetcode1.cpp)
+SET_PROPERTY(TARGET TwoSums PROPERTY CXX_STANDARD 11)
+
+add_executable(ThreeSum leetcode15.cpp)
+SET_PROPERTY(TARGET ThreeSum PROPERTY CXX_STANDARD 11)
+
+add_executable(FourSum leetcode454.cpp)
+SET_PROPERTY(TARGET FourSum PROPERTY CXX_STANDARD 11)
+
+add_executable(template_test template_test.cpp)
+SET_PROPERTY(TARGET template_test PROPERTY CXX_STANDARD 11)
