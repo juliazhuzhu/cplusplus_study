@@ -31,10 +31,14 @@ int main(int argc, char** argv){
       //                                              { return s.size() >= sz;});
 
     auto wc2 = find_if(words.begin(), words.end(), bind(is_greater,_1,sz));
+
+    
+    //user_info.source_ip = last_ip;
    /* ostream &os = cout;
     char c = ' ';
     for_each(wc.begin(), wc.end(), [&os, c](const string &s){ os <<s <<c;} );*/
-
+    string test;
+    printf("test length %d\n",strlen(test.c_str()));
 
     return 1;
 }
