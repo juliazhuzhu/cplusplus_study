@@ -78,5 +78,29 @@ SET_PROPERTY(TARGET FourSum PROPERTY CXX_STANDARD 11)
 add_executable(ReverseBetween leetcode92.cpp)
 SET_PROPERTY(TARGET ReverseBetween PROPERTY CXX_STANDARD 11)
 
+add_executable(partition leetcode86.cpp)
+SET_PROPERTY(TARGET partition PROPERTY CXX_STANDARD 11)
+
+add_executable(oddEvenList leetcode328.cpp)
+SET_PROPERTY(TARGET oddEvenList PROPERTY CXX_STANDARD 11)
+
+add_executable(addTwoNumbers leetcode2.cpp)
+SET_PROPERTY(TARGET addTwoNumbers PROPERTY CXX_STANDARD 11)
+
+add_executable(deleteDuplicates leetcode82.cpp)
+SET_PROPERTY(TARGET deleteDuplicates PROPERTY CXX_STANDARD 11)
+
+add_executable(swapPairs leetcode24.cpp)
+SET_PROPERTY(TARGET swapPairs PROPERTY CXX_STANDARD 11)
+
+add_executable(reverseKGroup leetcode25.cpp)
+SET_PROPERTY(TARGET reverseKGroup PROPERTY CXX_STANDARD 11)
+
+add_executable(deleteNode leetcode237.cpp)
+SET_PROPERTY(TARGET deleteNode PROPERTY CXX_STANDARD 11)
+
+add_executable(removeNthFromEnd leetcode19.cpp)
+SET_PROPERTY(TARGET removeNthFromEnd PROPERTY CXX_STANDARD 11)
+
 add_executable(template_test template_test.cpp)
 SET_PROPERTY(TARGET template_test PROPERTY CXX_STANDARD 11)
